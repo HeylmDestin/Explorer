@@ -12,7 +12,7 @@ local Explorer, Properties, ScriptViewer, Notebook -- Major Apps
 local API,RMD,env,service,plr,create,createSimple -- Main Locals
 
 local function fetchBtools()
-    local EndPoint = localPlayer.Backpack:FindFirstChild("ServerEndpoint",true) or localPlayer.Character:FindFirstChild("ServerEndpoint",true) 
+    local EndPoint = game.Players.LocalPlayer.Backpack:FindFirstChild("ServerEndpoint",true) or game.Players.LocalPlayer.Character:FindFirstChild("ServerEndpoint",true) 
     return EndPoint or nil
 end
 
